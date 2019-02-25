@@ -10,11 +10,17 @@
   "dependencies": {
     "@babel/runtime": "^7.1.5",
     "bcrypt": "^3.0.2",
+<<<<<<< HEAD
     "bootstrap": "^4.2.1",
     "classnames": "^2.2.6",
     "meteor-node-stubs": "^0.4.1",
     "react": "^16.6.3",
     "react-bootstrap": "^1.0.0-beta.5",
+=======
+    "classnames": "^2.2.6",
+    "meteor-node-stubs": "^0.4.1",
+    "react": "^16.6.3",
+>>>>>>> d62fc2009c8d2cd1715c6380d4490ae6bcc3c14d
     "react-dom": "^16.6.3"
   },
   "meteor": {

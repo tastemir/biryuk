@@ -31,7 +31,11 @@ Meteor.methods({
       createdAt: new Date(),
       owner: this.userId,
       username: Meteor.users.findOne(this.userId).username,
+<<<<<<< HEAD
     });
+=======
+    }); //Adding tasks 
+>>>>>>> d62fc2009c8d2cd1715c6380d4490ae6bcc3c14d
   },
   'tasks.remove'(taskId) {
     check(taskId, String);
@@ -40,7 +44,11 @@ Meteor.methods({
     if (task.private && task.owner !== this.userId) {
       // If the task is private, make sure only the owner can delete it
       throw new Meteor.Error('not-authorized');
+<<<<<<< HEAD
     }
+=======
+    } // 'Deleting tasks' button
+>>>>>>> d62fc2009c8d2cd1715c6380d4490ae6bcc3c14d
 
     Tasks.remove(taskId);
   },
@@ -52,10 +60,17 @@ Meteor.methods({
     if (task.private && task.owner !== this.userId) {
       // If the task is private, make sure only the owner can check it off
       throw new Meteor.Error('not-authorized');
+<<<<<<< HEAD
     }
 
     Tasks.update(taskId, { $set: { checked: setChecked } });
   },
+=======
+    }// 
+
+    Tasks.update(taskId, { $set: { checked: setChecked } });
+  }, // Ticking and crossing it out
+>>>>>>> d62fc2009c8d2cd1715c6380d4490ae6bcc3c14d
   'tasks.setPrivate'(taskId, setToPrivate) {
     check(taskId, String);
     check(setToPrivate, Boolean);
@@ -65,8 +80,16 @@ Meteor.methods({
     // Make sure only the task owner can make a task private
     if (task.owner !== this.userId) {
       throw new Meteor.Error('not-authorized');
+<<<<<<< HEAD
     }
 
     Tasks.update(taskId, { $set: { private: setToPrivate } });
   },
 });
+=======
+    } // Ability to make tasks private
+
+    Tasks.update(taskId, { $set: { private: setToPrivate } });
+  },
+});
+>>>>>>> d62fc2009c8d2cd1715c6380d4490ae6bcc3c14d

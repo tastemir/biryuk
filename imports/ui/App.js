@@ -8,9 +8,12 @@ import { Tasks } from '../api/tasks.js';
 import Task from './Task.js';
 import AccountsUIWrapper from './AccountsUIWrapper.js';
 
+<<<<<<< HEAD
 import { Alert, Navbar, Nav, Form, Button } from 'react-bootstrap';
 
 
+=======
+>>>>>>> d62fc2009c8d2cd1715c6380d4490ae6bcc3c14d
 // App component - represents the whole app
 class App extends Component {
   constructor(props) {
@@ -62,6 +65,7 @@ class App extends Component {
     return (
       <div className="container">
         <header>
+<<<<<<< HEAD
         <Navbar bg="light" expand="lg">
           <Navbar.Brand href="main.html">Batyr's App</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -75,6 +79,8 @@ class App extends Component {
             </Form>
           </Navbar.Collapse>
         </Navbar>
+=======
+>>>>>>> d62fc2009c8d2cd1715c6380d4490ae6bcc3c14d
           <h1>Todo List ({this.props.incompleteCount})</h1>
 
           <label className="hide-completed">
@@ -99,7 +105,11 @@ class App extends Component {
             </form> : ''
           }
         </header>
+<<<<<<< HEAD
        
+=======
+
+>>>>>>> d62fc2009c8d2cd1715c6380d4490ae6bcc3c14d
         <ul>
           {this.renderTasks()}
         </ul>
